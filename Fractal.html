@@ -24,7 +24,7 @@
         ctx.stroke();
 
         ctx.shadowBlur = 15;
-        ctx.shadowColor = "rgba(255,0,0,0.1)";
+        ctx.shadowColor = "rgba(255,0,0,0.6)";
 
         if(len < 10) {
             ctx.restore();
@@ -33,9 +33,7 @@
 
         draw(0, -len, len*0.8, angle-180, branchWidth*0.8);
         draw(0, -len, len*0.8, angle+180, branchWidth*0.8);
-        draw(0, -len, len*0.8, angle+180, branchWidth*0.8);
-        draw(0, -len, len*0.8, angle+180, branchWidth*0.8);
-        
+
 
         ctx.restore();
     }
