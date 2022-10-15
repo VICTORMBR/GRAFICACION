@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <canvas id="my_canvas" width="1000" height="800"></canvas>
+    <canvas id="my_canvas" width="1000" height="1000"></canvas>
     <script>
     var myCanvas = document.getElementById("my_canvas");
     var ctx = myCanvas.getContext("2d");
@@ -31,8 +31,8 @@
             return;
         }
 
-        draw(0, -len, len*0.8, angle-120, branchWidth*2);
-        draw(0, -len, len*0.8, angle+120, branchWidth*2);
+        draw(0, -len, len*0.8, angle-30, branchWidth*2);
+        draw(0, -len, len*0.8, angle+30, branchWidth*2);
 
         ctx.restore();
     }
